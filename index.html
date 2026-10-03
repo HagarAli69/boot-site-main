@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Light House</title>
+
+</head>
+<body>
+    <header>
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary bg-light border py-3 fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-brand border border-dark border-top-0 border-start-0 border-bottom-0 px-4" src="images/logo.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="font-weight: 600; font-size: 18px;" class="nav-link active text-dark px-3 " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a style="font-weight: 600; font-size: 18px;"  class="nav-link text-dark  px-3" href="#">Cap Lamp</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="font-weight: 600; font-size: 18px;"  class="nav-link dropdown-toggle text-dark  px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Lamp
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Laser Lamp</a></li>
+                            <li><a class="dropdown-item" href="#">Olight</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">LED Lamp</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-weight: 600; font-size: 18px;"  class="nav-link  px-3 text-dark" aria-disabled="true">Aroma Light</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary mx-2" type="submit">Search</button>
+                </form>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LogIn
+                </button>
+
+
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">LogIn</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="m-3">
+                            <label class="form-label text-dark">Email address</label>
+                            <input type="email" class="form-control text-dark border-3 border-dark rounded-2"
+                                aria-describedby="emailHelp">
+                            <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+                        </div>
+                        <div class="m-3">
+                            <label class="form-label text-dark">Password</label>
+                            <input type="password" class="form-control text-dark border-3 border-dark rounded-2">
+                        </div>
+                        <div class="m-3 form-check">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input bg-dark border-dark" type="checkbox" role="switch" checked>
+                                <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember me</label>
+                            </div>
+                        </div> <!-- /form check -->
+
+                    </form>
+                </div>
+                <div class="modal-footer d-flex  justify-content-between">
+                    <button type="submit" class="btn btn-dark text-light">Login</button>
+                    <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Close</button>
+                </div> <!-- /model-footer -->
+            </div>
+        </div>
+    </div>
+
+    <aside>
+        <div class="container-fluid p-0 " style="position: relative;">
+
+            <div class="d-flex flex-column justify-content-between ms-auto"
+                style="position: fixed;z-index: 990;top: 250px;right:30px;">
+                <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-linkedin  "></i></a></div>
+                <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square  "></i></a></div>
+            </div>
+            </div>
+    </aside>
+
+    <main>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/main-banner-1-1903x923.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/main-banner-2-1903x923.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next me-4" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </main>
+    <section>
+        <div class="mt-4 p-5 bg-dark text-light border rounded mx-0">
+            <h2 class="h1">Molestias Excepturi Sint Occaecati</h2>
+            <p>1914 translation by H. Rackham"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+            ...</p>
+            <button type="button" class="btn btn-outline-light py-2 px-5">More</button>
+        </div>
+        <div class="mt-4 p-5 bg-dark text-light border rounded mx-0">
+            <h2 style="text-align: center; font-style: italic;" class="h1">Modern Ceiling Lamp</h2>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div id="accordion">
+
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseOne">
+                        Importance of High-Quality
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        "The quality of chairs is a crucial factor that significantly impacts the seating experience. High-quality chairs are
+                        distinguished by their meticulous design and excellent materials, ensuring long-term comfort and durability. Materials
+                        are selected with care to provide optimal support for the body, and the attention to detail in the craftsmanship
+                        contributes to a comfortable and balanced seating experience. Therefore, quality chairs are an important investment to
+                        ensure comfort and well-being with every use."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseTwo">
+                        Combining Elegance and Functionality
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        "Chairs of superior quality stand out by combining beauty, comfort, and functionality. They are made from exceptional
+                        materials such as premium leather or durable fabric, and feature designs that provide excellent support for the back and
+                        neck. The meticulous attention to detail in the manufacturing process ensures the chair's durability and strength,
+                        making it an ideal choice for offices or homes that require furniture blending elegance and practicality."
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <a class="collapsed btn btn-light" data-bs-toggle="collapse" href="#collapseThree">
+                        Craftsmanship and Ergonomics
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        "High-quality chairs embody a great attention to craftsmanship and design, offering exceptional comfort that lasts.
+                        These chairs rely on advanced manufacturing techniques and high-quality materials to ensure their longevity and
+                        durability. The ergonomic and innovative design contributes to even weight distribution, reducing strain and enhancing
+                        the seating experience. Whether used in offices or at home, quality chairs enhance user well-being and add a touch of
+                        luxury."
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <hr>
+        <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+            <h1>Book at our branch in Egypt</h1>
+        </div>
+        <!-- card1 -->
+        <div class="card p-3  text-white shadow-lg bg-dark">
+            <div class="card-body">
+                <h4 class="card-title ">Click to send </h4>
+                <button
+                    class="btn btn-outline-light  border border-2  shadow-lg " data-bs-toggle="tooltip" title="copy"  style="font-size: 18px;" onclick="callAlert()">
+                    Send
+                </button>
+                <br>
+                <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write:"
+                    name="text"></textarea>
+            </div>
+        </div>
+        <!-- /card1 -->
+        <hr>
+        <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+            <h1>Book at our branch in Russia</h1>
+        </div>
+        <!-- card2 -->
+        <div class="card p-3  text-white shadow-lg bg-dark">
+            <div class="card-body">
+                <h4 class="card-title ">Click to send </h4>
+                <button class="btn btn-outline-light border border-2  shadow-lg " data-bs-toggle="tooltip" title="copy" style="font-size: 18px;" onclick="callAlert()">
+                    Send
+                </button>
+                <br>
+                <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write:"
+                    name="text"></textarea>
+            </div>
+        </div>
+        <!-- /card2 -->
+        <hr>
+        <div class="tran mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+            <h1>Book at our branch in Sultanate of Oman</h1>
+        </div>
+        <!-- card3 -->
+        <div class="card p-3  text-white shadow-lg bg-dark">
+            <div class="card-body">
+                <h4 class="card-title ">Click to send </h4>
+                <button class="btn btn-outline-light border border-2  shadow-lg " data-bs-toggle="tooltip" title="copy" style="font-size: 18px;" onclick="callAlert()">
+                    Send
+                </button>
+                <br>
+                <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="Write:"
+                    name="text"></textarea>
+            </div>
+        </div>
+        <!-- /card3 -->
+    </section>
+    <section>
+        <div class="fixed-img fixed-image1"></div><hr class="my-4">
+        <div class="tran mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg bg-dark">
+            <h1 class="title" style="font-size: 50px;">Recent Arrival</h1>
+        </div>
+    </section>
+    <section>
+        <div class="row justify-content-around pb-5 ">
+            <div class="eff-1 card-my1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img  class="card-my2 card-img-top" src="images/01-277x320.jpg" alt="Card image">
+                <div style="text-align: center;" class="card-body">
+                    <h4 class="card-title">Voluptates Repudiandae</h4>
+                    <p style="font-size: 17px;" class="card-text mt-3">Pleasures that are to be despised</p>
+                    <a href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/02-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Jucunditas  Neganda</h4>
+                    <p style="font-size: 17px;" class="card-text">Pleasures that should be denied</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/04-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Amplectendae Praetermittendae</h4>
+                    <p style="font-size: 17px;" class="card-text">Delights that must be neglected</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/05-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Voluptas Contemnenda</h4>
+                    <p style="font-size: 17px;" class="card-text">Pleasures that should be contemned</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/10-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Dulcedo  Abneganda</h4>
+                    <p style="font-size: 17px;" class="card-text">Sweetness that must be renounced</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/13-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Sensatio Desideranda</h4>
+                    <p style="font-size: 17px;" class="card-text">Sensations that are to be avoided</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/14-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Complacentia Dissimulanda</h4>
+                    <p style="font-size: 17px;" class="card-text">Contentment that should be dissimulated</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+            <div class="card-my1 eff-1 card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+                <img class="card-my2 card-img-top" src="images/15-277x320.jpg" alt="Card image">
+                <div style="text-align: center;"  class="card-body">
+                    <h4 class="card-title">Hedonism  Abolenda</h4>
+                    <p style="font-size: 17px;" class="card-text">Hedonism that should be abolished.</p>
+                    <aa href="#" class="btn btn-outline-light py-2 my-2 w-50">See Profile</a>
+                </div>
+            </div>
+
+            </div>
+
+
+
+
+
+
+    </section>
+    <section>
+        <div class="fixed-img fixed-image2"></div><hr class="my-4">
+        <div class="card p-3  text-white shadow-lg bg-dark">
+            <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Thanks For</h2>
+        </div>
+    </section>
+    <section class="thanks">
+        <div class="container" style="width: 100%; min-height: 500px;">
+
+            <div class="row">
+                <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                    <div class="card card-hover text-white card-bg click-col thankcard"
+                        style="background-image:url('images/person-1.jpg'); border-radius: 17px !important;">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                                </h4>
+                                <small><i class="far fa-clock"></i> August 15, 2024</small>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3 rounded-circle" src="images/person-1.jpg"
+                                        alt="Generic placeholder image" style="width:100px">
+                                    <div class="media-body">
+                                        <h6 class="my-0 text-white d-block">ُEng. Ahmed Abd Elfattah</h6>
+                                        <small>Front End</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="thankcard-parent col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                    <div class=" card card-hover text-white card-bg click-col thankcard"
+                        style="background-image:url('images/person-2.jpg'); border-radius: 17px !important;">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                                </h4>
+                                <small><i class="far fa-clock"></i> August 15, 2024</small>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3 rounded-circle" src="images/person-2.jpg" alt="Generic placeholder image"
+                                        style="width:100px">
+                                    <div class="media-body">
+                                        <h6 class="my-0 text-white d-block">Eng. Islam Mohammed</h6>
+                                        <small>Website programmer</small>
+                                    </div>
+                                </div>
+                            </div> <!-- card-footer -->
+                        </div> <!-- /card-img-overlay -->
+                    </div> <!-- /card -->
+                </div> <!-- /card3 -->
+                <div class="thankcard-parent col-12 col-lg-6 col-xl-4 col-md-12 col-sm-12 mb-4 card3">
+                    <div class="card card-hover text-white card-bg click-col thankcard"
+                        style="background-image:url('images/person-3.jpg'); border-radius: 17px !important;">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">All Thanks And Appreciation</a>
+                                </h4>
+                                <small><i class="far fa-clock"></i> August 15, 2024</small>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3 rounded-circle" src="images/person-3.jpg" alt="Generic placeholder image"
+                                        style="width:100px">
+                                    <div class="media-body">
+                                        <h6 class="my-0 text-white d-block">ُEng.Hamza Nabil</h6>
+                                        <small>Website programmer</small>
+                                    </div>
+                                </div>
+                            </div> <!-- card-footer -->
+                        </div> <!-- /card-img-overlay -->
+                    </div> <!-- /card -->
+                </div> <!-- /card3 -->
+
+            </div> <!-- /row -->
+
+        </div>
+    </section>
+    <section>
+        <div class="h1 text-center bg-dark py-5 text-light" id="pageHeaderTitle" style="font-size: 40px;">Latest Blog</div>
+    </section>
+    <section class="container light">
+        <div class="paren-art d-flex flex-column container py-2">
+            <div  class="card card-custom w-100 bg-dark text-light d-flex flex-row-reverse my-5">
+                <div class="card-img-custom" >
+                </div>
+                <div class="card-body card-body-custom">
+                    <h4  style="font-size: 40px;width: 40%;margin: 20px;position: relative;"  class="card-title py-2">Durability</h4>
+                    <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Investing in high-quality furniture is essential for several reasons. First and foremost, well-made furniture offers
+                    durability and longevity. Unlike cheaper alternatives, quality furniture can withstand daily wear and tear, maintaining.</p>
+                        <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4">More</button>
+                </div>
+            </div>
+
+            <div  class="card card-custom w-100 bg-dark text-light flex-row">
+                <div style="clip-path: polygon(0 0, 60% 0, 88% 100%, 0 100%); width: 30%; " class="card-img-custom">
+                </div>
+                <div class="card-body card-body-custom">
+                    <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative;" class="card-title py-2">Craftsmanship</h4>
+                    <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Recognizing quality in furniture involves paying attention to several key factors. First, examine the materials used.
+                    Solid wood, high-quality metal, and durable upholstery are indicators of good-quality furniture. Avoid pieces made with
+                    particleboard or low-grade materials, as they are prone to damage and wear.</p>
+                        <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4">More</button>
+                </div>
+            </div>
+            <div  class="card card-custom w-100 bg-dark text-light d-flex flex-row-reverse my-5">
+                <div class="card-img-custom">
+                </div>
+                <div class="card-body card-body-custom">
+                    <h4 style="font-size: 40px;width: 40%;margin: 20px;position: relative;" class="card-title py-2">Durability</h4>
+                    <p style="text-transform: capitalize;font-size: 17px;" class="card-text-art px-4">Quality furniture significantly impacts your home environment in various positive ways. Firstly, it enhances the
+                    aesthetic appeal of your space. Well-designed, high-quality pieces serve as focal points and can elevate the overall
+                    decor of a room. They often come in timeless styles that remain fashionable for years, allowing you to enjoy a
+                    sophisticated and cohesive look.</p>
+                        <button type="button" class="btn btn-outline-light  w-50 py-3 mx-4">More</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="mb-5">
+        <div style="margin: auto;" class="container d-flex row justify-content-around">
+        <h2 class="Media-title h1 text-center py-5 text-light">Join Us</h2>
+        <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+            <h3 class="text-center text-light title py-2">Follow Us In</h3>
+            <i class="fab fa-twitter-square"></i>
+            <a class="text-light">Go To Link</a>
+        </div>
+        <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+            <h3 class="text-center text-light title py-2">Follow Us In</h3>
+            <i class="fab fa-whatsapp-square"></i>
+            <a class="text-light">Go To Link</a>
+        </div>
+        <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+            <h3 class="text-center text-light title py-2">Follow Us In</h3>
+            <i class="fab fa-linkedin"></i>
+            <a class="text-light">Go To Link</a>
+        </div>
+        <div class="card Media bg-dark col-sm-12 col-md-6 col-lg-4">
+            <h3 class="text-center text-light title py-2">Follow Us In</h3>
+            <i class="fab fa-instagram-square"></i>
+            <a class="text-light">Go To Link</a>
+        </div>
+        </div>
+    </section>
+    <footer style="height: 370px;" class="bg-dark w-100 ">
+        <div class="container d-flex justify-content-between">
+        <div class="footer-item">
+            <ul>
+                <h3 class="text-light">Store Information</h3>
+                <li><a href="#"><i class="fas fa-map-marker-alt px-2"></i> Lighthouse - Lamp Store
+                507-Union Trade Centre
+                United States</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt px-2"></i> 01556425351</a></li>
+                <li><a href="#"><i class="far fa-envelope px-2"></i> email4deva7med@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <ul>
+                <h3 class="text-light">Information</h3>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-item footer-item-cards">
+            <img src="images/paypal.png" alt="#">
+            <img src="images/master_card.png" alt="#">
+            <img src="images/visa.png" alt="#">
+            <img src="images/american_express.png" alt="#">
+            <img src="images/discover.png" alt="#">
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <!-- <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script> -->
+</body>
+</html>
